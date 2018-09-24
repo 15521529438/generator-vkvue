@@ -12,7 +12,11 @@ module.exports = {
   globals: {
     
   },
-  extends: [],
+  extends: [
+    'plugin:vue/essential', 
+    // https://github.com/standard/standard/blob/master/docs/RULES-en.md
+    'standard'
+  ],
   plugins: [
     'vue'
   ],
@@ -72,14 +76,14 @@ module.exports = {
     'camelcase': 'error',/*强制使用骆驼拼写法命名约定*/
     'indent': ["error", 2],/*强制使用一致的缩进*/
     'line-comment-position': ["warn", { "position": "above" }],/*强制行注释的位置*/
-    'linebreak-style': ['warn','windows'],/*强制使用一致的换行风格*/
+    //'linebreak-style': ['warn','windows'],/*强制使用一致的换行风格*/
     'max-depth': ['warn',4],/*强制可嵌套的块的最大深度*/
     'max-len': ['warn',{'code':80, 'tabWidth':2, "ignoreComments": true, "ignoreUrls": true,
                         "ignoreStrings": true, "ignoreTemplateLiterals": true,
                         "ignoreRegExpLiterals": true}
                ],/*强制一行的最大长度*/
     'max-nested-callbacks': 'warn',/*强制回调函数最大嵌套深度*/
-    'multiline-comment-style': ["warn", "starred-block"],/*强制对多行注释使用特定风格*/
+    //'multiline-comment-style': ["warn", "starred-block"],/*强制对多行注释使用特定风格*/
     'new-cap': 'error',/*要求构造函数首字母大写*/
     'no-multiple-empty-lines': 'warn',/*禁止出现多行空行*/
     'no-nested-ternary': 'warn',/*禁用嵌套的三元表达式*/
@@ -107,7 +111,7 @@ module.exports = {
     'no-eval': ["warn", {"allowIndirect": true}],
     'curly': ['warn','multi-or-nest'],
     'eqeqeq': ['error','smart'],/*使用===*/
-    'comma-spacing': ["warn", { "before": false, "after": true }]，/*逗号后面加空格*/
+    //'comma-spacing': ["warn", { "before": false, "after": true }]，/*逗号后面加空格*/
     'one-var': ['warn','never']/*每个var关键字单独声明一个变量*/
   }
 }

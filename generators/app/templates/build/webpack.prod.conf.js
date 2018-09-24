@@ -137,6 +137,7 @@ if (config.build.productionGzip) {
       ),
       threshold: 10240,
       minRatio: 0.8
+      //cache: false  //是否启动缓存
     })
   )
 }
