@@ -88,10 +88,10 @@ module.exports = class extends Generator {
             this.templatePath('.eslintrc.js'),
             this.destinationPath(_path + '/.eslintrc.js')
         );
-        this.fs.copyTpl(
-            this.templatePath('.gitignore'),
-            this.destinationPath(_path + '/.gitignore')
-        );
+        // this.fs.copyTpl(
+        //     this.templatePath('.gitignore'),
+        //     this.destinationPath(_path + '/.gitignore')
+        // );
         this.fs.copyTpl(
             this.templatePath('.postcssrc.js'),
             this.destinationPath(_path + '/.postcssrc.js')
